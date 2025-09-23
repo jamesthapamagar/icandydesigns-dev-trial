@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>iCandyDesigns</title>
+        <style type="text/tailwindcss">
+        @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap");
+        @import "tailwindcss";
+        @theme {
+            --color-icandy-orange: #F6B600;
+            --color-icandy-black: #151515;
+
+            --font-heading: "Oswald", serif;
+            --font-body: "Open Sans", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- main body -->
+    <div class="flex-col justify-center">
+        <!-- nav -->
+        <div class="flex justify-between p-4">
+            <img class="w-15" src="iCD.svg" alt="iCandyDesigns Logo">
+            <!-- right side of nav  -->
+            <div class="flex items-center sm:hidden ">
+                <img class="w-8" src="burger-menu.svg" alt="iCandyDesigns Logo">
+            </div>
+            <div class="hidden sm:block flex justify-even">
+                <ul class="flex justify-center items-center gap-6 font-body">
+                    <li> <a href="">Our Work</a></li>
+                    <li> <a href="">About</a></li>
+                    <li> <a href="">News</a></li>
+                    <li> <a href="">Teams</a></li>
+                    <button class="px-8 py-2 bg-icandy-orange font-body">Contact</button>
+                </ul>
+
+            </div>
+
+        </div>
+        <!-- main body -->
+        <div class="bg-icandy-black min-h-screen pt-16 flex">
+            <div class="w-1/12">
+                <div class="hidden sm:block w-5/6 border-t-4 border-icandy-orange">
+                </div>
+            </div>
+
+            <div class="w-10/12 pb-10">
+                <div class="flex justify-between w-full">
+                    <h1 class="text-white font-heading text-5xl sm:text-6xl">GALLERY</h1>
+                    <div class="flex justify-center items-centr">
+                        <button class="hidden sm:block px-6 py2 bg-icandy-orange font-body">Discover Our Gallery</button>
+                    </div>
+                </div>
+
+                <div class="pt-10 pb-4">
+                    <ol class="flex text-white gap-2 font-body">
+                        <li> <a href="">Gallery</a></li>
+                        <span> | </span>
+                        <li> <a href="">Category</a></li>
+                        <span> | </span>
+                        <li> <a href="" class="text-icandy-orange">Subcategory</a></li>
+                    </ol>
+                </div>
+                <!-- pictures -->
+                    <div class="grid sm:grid-cols-[1fr_2fr_1fr] sm:grid-rows-2 gap-4 ">
+                        <!-- TODO: image block level, so not actually doing, may need to conver to div w/ url -->
+
+                        <div class="sm:col-start-1 sm:row-start-1 aspect-[4/3] w-full bg-[url(Lion.jpg)] bg-cover"></div>
+                        <div class="sm:col-start-1 sm:row-start 2 aspect-[4/3] w-full bg-[url(Flamingos.jpg)] bg-cover"></div>
+
+
+                        <div class="sm:col-start-2 sm:row-start-1 row-span-2 aspect-[4/3] bg-[url(Elephant.jpg)] bg-cover bg-[position:15%]">
+                    </div>
+
+                    <div class="sm:col-start-3 sm:row-start-1 row-span-2 overflow-hidden">
+                        <!-- scale to get the image the right size -->
+                        <!-- scale to zoom in overflow to contain excess image inside container -->
+                        <div class="w-full h-full aspect-[3/4] bg-[url('Giraffes.jpg')] bg-cover bg-[position:70%] scale-125"></div>
+                    </div>
+                </div>
+                <div class="py-6">
+                    <button class="block sm:hidden w-full  py-4 bg-icandy-orange font-body">Discover Our Gallery</button>
+                </div>
+            </div>
+
+            <div class="w-1/12">
+
+            </div>
+
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
